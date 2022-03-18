@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:11.2
 
 RUN apt-get update && apt-get install -y apache2
 ENV APACHE_LOCK_DIR="/var/lock"
