@@ -5,7 +5,7 @@ ADD . /app
 RUN go mod init meugo
 RUN go build -o meugo
 
-FROM alpine
+FROM alpine:3.15.4
 WORKDIR /main
 COPY --from=build /app/meugo /main/
 
