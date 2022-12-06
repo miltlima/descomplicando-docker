@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:11.5
 
 RUN apt-get update && apt-get install -y apache2 && apt-get clean
 RUN chown www-data:www-data /var/lock && chown www-data:www-data /var/run && chown www-data:www-data /var/log
